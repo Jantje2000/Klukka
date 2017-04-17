@@ -1,4 +1,4 @@
- # Klukka
+# Klukka
 Klukka is a time registration system that you can use to check how many hours your employees worked.
 
 You can setup this time registration system sure. You have to follow my points:
@@ -17,8 +17,20 @@ You can setup this time registration system sure. You have to follow my points:
 
 # Setting up the RFID reader. This is possible with Arduino and Raspberry Pi.
 
-# Setting up with Arduino
+# Setting up with Raspberry Pi
 
 1. First you need a RC522 RFID Reader
-2. You have to connect this reader to the raspberry as following: <br /> <img src="/setprefs?suggon=2&prev=https://www.google.nl/search?q%3Drc522%2Barduino%26source%3Dlnms%26tbm%3Disch%26sa%3DX%26ved%3D0ahUKEwiWr6rb7avTAhXNEVAKHQb6Df8Q_AUICCgB%26biw%3D1440%26bih%3D783&sig=0_3bFmMugPq2ypqffA_FCk6EF6eXc%3D">
+2. You have to connect this reader to the raspberry as following: <br /> <img src="https://github.com/Jantje2000/Klukka/blob/master/raspberry.png?">
+3. At your raspberry pi enable the SPI interface. (Start -> Preferences -> Raspberry Pi configuration -> Interfaces
+4. Reboot your raspberry pi
+5. Then you need the SPI library, so run the following command in the terminal : "sudo apt-get install python-dev"
+6. Download SPI-Py from Github with the following command: "git clone https://github.com/lthierry/SPI-Py.git"
+7. Set SPI-Py usable for Python: "sudo python setup.py install"
+8. Now save the file raspberry.py anywhere and change on line 43 the domain name of the website where you want to send the request.
+9. Now run this programm and you can use this for clocking your employees
 
+# Setting up with Arduino
+
+1. 1. First you need a RC522 RFID Reader
+2. You have to connect this reader to the arduino as following: <br /> <img src="https://github.com/Jantje2000/Klukka/blob/master/arduino.png?">
+3. Load the file rfid.ino on your arduino IDE.
