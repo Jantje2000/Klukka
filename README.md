@@ -15,5 +15,10 @@ You can setup this time registration system sure. You have to follow my points:
 4. If you want to use the payslip then you have to fill in the data of your company. This is possible in "get_loonstrook.php" at line 52-54. Here you can personalize the payslip.
 5. THIS POINT IS ONLY INTENDED FOR PEOPLE IN THE NETHERLANTHS! <br /> If you are living in the Netherlanths you can get an API key at <a href="https://postcodeapi.nu">postcodeapi.nu</a> that you have to fill in at "getaddress.php" on line 6. Then will the addresses fill in automatically if you are adding a new user.
 
-# Setting up the RFID reader. This is possible at Arduino and Raspberry Pi
+# Setting up the RFID reader. This is possible with Arduino and Raspberry Pi.
+
+# Setting up with Arduino
+
+1. First you need a RC522 RFID Reader
+2. You have to connect this reader to the raspberry as following: <br /> <img src="/setprefs?suggon=2&prev=https://www.google.nl/search?q%3Drc522%2Barduino%26source%3Dlnms%26tbm%3Disch%26sa%3DX%26ved%3D0ahUKEwiWr6rb7avTAhXNEVAKHQb6Df8Q_AUICCgB%26biw%3D1440%26bih%3D783&sig=0_3bFmMugPq2ypqffA_FCk6EF6eXc%3D">
 
