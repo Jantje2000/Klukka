@@ -31,6 +31,9 @@ You can setup this time registration system sure. You have to follow my points:
 
 # Setting up with Arduino
 
-1. 1. First you need a RC522 RFID Reader
+1. First you need a RC522 RFID Reader, an ethernet shield that use the standard Ethernet library and a display that make use of the standard LiquidCrystal library.
 2. You have to connect this reader to the arduino as following: <br /> <img src="https://github.com/Jantje2000/Klukka/blob/master/arduino.png?">
 3. Load the file rfid.ino on your arduino IDE.
+4. Set on line 12 and line 58 the website where you want to send the requests to.
+5. Set on line 13 the internal IP address in your network.
+6. Load this program on the arduino and you can use this for clocking your employees
