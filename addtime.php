@@ -1,6 +1,6 @@
 <?php
-	$db = new PDO("mysql:host=10.3.1.189;dbname=starre_test123",
-                 "starre_test123", "test123"); // An connection with the database.
+	$db = new PDO("mysql:host=***;dbname=***",
+                 "***", "***"); // An connection with the database.
 	
 	$employee = $_GET["uid"]; //the Unique IDentifier that will be send with requests.
 	
